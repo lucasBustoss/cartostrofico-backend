@@ -37,7 +37,7 @@ class Schedule {
   favorPoints: number;
 
   @Column('float8')
-  againsPoints: number;
+  againstPoints: number;
 
   @Column('float8')
   pointsBalance: number;

@@ -30,21 +30,6 @@ class Fixture {
   @Column()
   finished: boolean;
 
-  @Column()
-  loses: number;
-
-  @Column('float8')
-  favorPoints: number;
-
-  @Column('float8')
-  againsPoints: number;
-
-  @Column('float8')
-  pointsBalance: number;
-
-  @Column('float8')
-  percentage: number;
-
   @CreateDateColumn()
   created_at: Date;
 

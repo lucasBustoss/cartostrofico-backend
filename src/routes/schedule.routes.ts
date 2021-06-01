@@ -11,4 +11,12 @@ betsRouter.get('/', async (request, response) => {
   return response.json(data);
 });
 
+betsRouter.post('/', async (request, response) => {
+  const scheduleService = new ScheduleService();
+
+  const data = await scheduleService.update();
+
+  return response.json(data);
+});
+
 export default betsRouter;
